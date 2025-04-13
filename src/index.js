@@ -9,7 +9,7 @@ import { cron } from "./lib/cron.js";
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-job.start();
+cron.start();
 app.use(express.json());
 app.use(
   cors({
